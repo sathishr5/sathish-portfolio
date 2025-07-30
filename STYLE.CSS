@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #2c003e, #3b0a58, #240046);
+  color: #ffffff;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 800;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 17px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: chartreuse;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero h2 span {
+  color: #ffbdf7;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.button {
+  background: linear-gradient(to right, #6d22b4, #822ab4);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background 0.4s ease;
+}
+
+.button:hover {
+  background: linear-gradient(to right, #8d3a7f, #ad3fc9);
+  cursor: pointer;
+}
+
+/* ===== SECTIONS ===== */
+section {
+  padding: 60px 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* ===== SKILLS SECTION ===== */
+.skills .skill {
+  margin-bottom: 20px;
+}
+
+.skills .bar {
+  background-color: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.skills .bar div {
+  background: linear-gradient(to right, #c33764, #1d2671);
+  height: 100%;
+  color: #fff;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+/* ===== PROJECTS SECTION ===== */
+.projects .project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.07);
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact {
+  text-align: center;
+  padding: 60px 40px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.contact a {
+  color: #ffc8ff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: chartreuse;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin-top: 40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+}
+/* === New Skill Card Grid === */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.skill-card {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+.skill-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.skill-card h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.skill-card p {
+  font-size: 16px;
+  color: chartreuse;
+}
+.resume {
+  text-align: center;
+  padding: 60px 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.resume-card {
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.resume-card:hover {
+  transform: scale(1.03);
+}
+
+.resume-card p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.education {
+  padding: 60px 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.education h3 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.edu-card {
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: scale(1.02);
+}
+
+.edu-card h4 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.edu-card p {
+  font-size: 16px;
+  color: #d6d6d6;
+}
+.final-footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+}
+
+.final-footer h4 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.footer-icons {
+  margin-bottom: 15px;
+  color: #822ab4;
+}
+
+.footer-icons a {
+  margin: 0 12px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  
+}
+.footer-icons img {
+  width: 30px;
+  height: 30px;
+  transition: filter 0.3s ease, transform 0.3s ease;
+  filter: brightness(0) invert(1);
+}
+
+/* Light tint hover for each icon */
+.footer-icons a:hover img[alt="Phone"] {
+  filter: invert(57%) sepia(63%) saturate(399%) hue-rotate(70deg) brightness(105%) contrast(97%);
+  transform: scale(1.15);
+}
+
+.footer-icons a:hover img[alt="Email"] {
+  filter: invert(61%) sepia(84%) saturate(1711%) hue-rotate(320deg) brightness(98%) contrast(92%);
+  transform: scale(1.15);
+}
+
+.footer-icons a:hover img[alt="LinkedIn"] {
+  filter: invert(36%) sepia(83%) saturate(1976%) hue-rotate(183deg) brightness(95%) contrast(93%);
+  transform: scale(1.15);
+}
+.footer-icons a:hover img[alt="GitHub"] {
+  filter: drop-shadow(0 0 6px #ccc);
+  transform: scale(1.15);
+}
